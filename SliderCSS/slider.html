@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design Play</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<div>
+<style type="text/css">
+
+	.container img {
+		display:block;
+		width:300px;
+		height:300px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 25px;
+		box-shadow: 10px 10px 5px #000;
+		transition: .5s ease;
+
+	}
+	
+	.column {
+		float:left;
+		margin-left: 100px;
+		margin-top: 100px;		
+		object-position: center;
+	}
+	
+	.column:hover {
+  		opacity: 0.6;
+	}
+	.column:hover .middle {
+  		opacity: 1;
+	}
+
+	.text {
+  		
+  		color: white;
+  		font-size: 50px;
+  		padding: 16px 32px;
+  	
+
+
+	}
+	.container .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  padding:20px;
+}
+
+body {
+	background-image: url('C:\Users\jaisw\Downloads\w.jpg');
+}
+
+.head {
+		text-shadow: 1px 1px 1px #fff;
+		text-align: center;
+		font-size: 100px;
+		font-family: monospace;
+		background-color: grey;
+
+}
+.foot {
+	position: fixed;
+	left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   text-align: center;
+   font-family: monospace;
+   font-size: 20px;
+   text-shadow: 1px 1px 1px #fff;
+   font-stretch: expanded;
+   letter-spacing: 30px;
+}
+
+
+
+
+	
+
+</style>
+
+<header class="head">
+	<b>Something Inspiring</b>
+</header>
+
+<div class="container">
+	
+	
+		<div class="column">
+			<img src="C:\Users\jaisw\Dropbox\IBMOnline6AprilReva (1)\cssWork\1.jpg" alt="Image couldn't be found">
+			  <div class="middle">
+        <div class="text"> <b>LIVE</b> </div>
+      </div>
+		</div>
+
+		<div class="column">
+			<img src="C:\Users\jaisw\Dropbox\IBMOnline6AprilReva (1)\cssWork\2.jpg" alt="Image couldn't be found">
+			<div class="middle">
+        <div class="text"> <b>LEARN</b> </div>
+      </div>
+		</div>
+
+		<div class="column">
+			<img src="C:\Users\jaisw\Dropbox\IBMOnline6AprilReva (1)\cssWork\3.jpg" alt="Image couldn't be found">
+			<div class="middle">
+        <div class="text"> <b>EVOLVE</b> </div>
+      </div>
+		</div>
+		
+</div>
+<footer class="foot">
+	<div>
+  			<b><pre>Stay home
+Skill up</pre></b>
+		</div>
+		</footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using CSS 3</title>
+</head>
+<body>
+
+<style type="text/css">
+
+.zoom {
+    position:all;
+    margin: auto;
+    overflow: hidden;
+    width: 540px;
+    border-radius: 40px 1px;
+    
+
+}
+.zoom img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: 5s;
+
+
+}
+
+.zoom:hover img {
+    transform: scale(8) rotate(180deg);
+    transition: 5s;
+
+    
+
+}
+
+</style>
+
+
+<div class="zoom" >
+  <img src="C:\Users\jaisw\Dropbox\IBMOnline6AprilReva (1)\cssWork\person-dog.jpg" width="540" height="548" />
+</div>
+
+</body>
+</html>

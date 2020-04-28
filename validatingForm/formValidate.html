@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validating Forms with JS</title>
+</head>
+<body>
+<form action="processData.html" onsubmit="return validateData();">
+	<input type="text" id="userName" placeholder="Your Name"> <span style="color:red;" id="name" > </span><br>
+	<input type="text" id="userAddress" placeholder="Your Address"> <span style="color:red;" id="address" > </span><br>
+	<input type="text" id="userPhone" placeholder="Your Phone"> <span style="color:red;" id="phone" > </span><br>
+	<input type="email" id="userEmail" placeholder="Your Email"> <span style="color:red;" id="mail" > </span><br>
+	Gender<input type="radio" name="gender" value="male">Male
+	<input type="radio" name="gender" value="female">Female<br>
+	City<select name="city">
+		<option value="delhi">Delhi</option>
+		<option value="bangalore">Bangalore</option>
+		
+	</select><br>
+	<input type="submit" value="REGISTER">
+</form>
+
+
+
+
+<script type="text/javascript">
+	function validateData(){
+		var userName = document.getElementById("userName");
+		var userAddress = document.getElementById("userAddress");
+		var userPhone = document.getElementById("userPhone");
+		var userEmail = document.getElementById("userEmail");
+		var gender = document.getElementsByClassName("gender");
+		if(userName.value == ""){
+			document.getElementById('name').innerHTML="We don't like blank names...";
+			userName.focus();
+			return false;
+		}
+		else if(!isNaN(userName.value)){
+			document.getElementById('name').innerHTML="Names can't include digits";
+			userName.value = "";
+			userName.focus();
+			return false;
+		}
+		else if(!userAddress.value.length){
+			document.getElementById('address').innerHTML="Please Enter the Address";
+			userAddress.focus();
+			return false;
+		}
+
+		else if(!userPhone.value.length){
+			document.getElementById('phone').innerHTML="Phone Number is required";
+			userPhone.focus();
+			return false;
+		}
+		else if(isNaN(userPhone.value)){
+			document.getElementById('phone').innerHTML="Please enter the correct phone number";
+			userPhone.value = "";
+			userPhone.focus();
+			return false;
+		}
+		else if(!userEmail.value.length){
+			document.getElementById('mail').innerHTML="Enter Email Id";
+			userEmail.focus();
+			return false;
+		}
+		else if(gender.required == false){
+			alert("Gender");
+			gender.focus();
+		}
+		else	
+
+		return true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+</script>
+
+</body>
+</html>
